@@ -37,13 +37,13 @@ const CardComp = ({ data }) => {
                                 />
                                 <CardBody>
                                     <CardTitle tag="h5">
-                                        {item.directorName}
+                                        {item?.directorName}
                                     </CardTitle>
                                     <CardSubtitle
                                         className="mb-2 text-muted"
                                         tag="h6"
                                     >
-                                        {item.companyName}
+                                        {item?.companyName}
                                     </CardSubtitle>
                                     <CardText>
                                         Some quick example text to build on the card title and make up the bulk of the card‘s content.
@@ -60,11 +60,11 @@ const CardComp = ({ data }) => {
             <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader toggle={toggle}>{modalData.companyName}</ModalHeader>
                 <ModalBody>
-                   <span> <span style={{fontWeight:600}}>Address :</span> {modalData.companyAddress}</span><br/>
-                   <span> <span style={{fontWeight:600}}>Email : </span>{modalData.companyEmail}</span><br/>
-                   <span> <span style={{fontWeight:600}}>Number of Employees :</span> {modalData.companyEmployeeCount}</span><br/>
-                   <span> <span style={{fontWeight:600}}>Fax Number :</span> {modalData.companyFaxNumber}</span><br/>
-                   <span> <span style={{fontWeight:600}}>Phone :</span>{modalData.companyPhone}</span><br/>
+                   <span> <span style={{fontWeight:600}}>Address :</span> {modalData?.companyAddress}</span><br/>
+                   <span> <span style={{fontWeight:600}}>Email : </span>{modalData?.companyEmail}</span><br/>
+                   <span> <span style={{fontWeight:600}}>Number of Employees :</span> {modalData?.companyEmployeeCount}</span><br/>
+                   <span> <span style={{fontWeight:600}}>Fax Number :</span> {modalData?.companyFaxNumber}</span><br/>
+                   <span> <span style={{fontWeight:600}}>Phone :</span>{modalData?.companyPhone}</span><br/>
                 </ModalBody>
               
             </Modal>
