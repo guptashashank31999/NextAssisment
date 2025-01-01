@@ -17,7 +17,7 @@ console.log('props', props);
       <>
         <Header />
         <Container>
-          <CardComp data={props.data || []}/>
+          <CardComp data={[]}/>
         </Container>
         <Footer />
 
